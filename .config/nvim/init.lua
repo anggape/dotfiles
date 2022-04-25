@@ -17,6 +17,10 @@ packer.startup(function (use)
     use 'hrsh7th/vim-vsnip'
 
     use 'windwp/nvim-autopairs'
+    use {
+        'nvim-telescope/telescope.nvim',
+	requires = { {'nvim-lua/plenary.nvim'} }
+    }
 end)
 
 require 'nvim-autopairs'.setup {}
@@ -94,3 +98,13 @@ require 'lspconfig'.sumneko_lua.setup {
         },
     },
 }
+
+local function map(mode, lhs, rhs, opts)
+    local options = { noremap = true }
+    if opts then
+        options = vim.tbl_extend("force", options, opts)
+    end
+    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
+
+map("n", "<C-p>", ":lua require('telescope.builtin').find_files()<CR>")
