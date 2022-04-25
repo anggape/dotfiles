@@ -1,0 +1,19 @@
+window:
+  padding:
+    x: 10
+    y: 10
+font:
+  normal:
+    family: JetBrainsMono
+    style: Regular
+  bold:
+    family: JetBrainsMono
+    style: Bold
+  italic:
+    family: JetBrainsMono
+    style: Italic
+  bold_italic:
+    style: Bold Italic
+cursor:
+  style:
+    blinking: On
