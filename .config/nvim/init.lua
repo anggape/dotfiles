@@ -2,6 +2,7 @@ vim.o.completeopt = "menu,menuone,noselect"
 vim.o.mouse = "a"
 vim.o.relativenumber = true
 vim.cmd 'packadd packer.nvim'
+vim.cmd 'colorscheme tokyonight'
 
 local packer = require 'packer'
 
@@ -25,6 +26,7 @@ packer.startup(function (use)
         'romgrk/barbar.nvim',
 	requires = {'kyazdani42/nvim-web-devicons'}
     }
+    use 'folke/tokyonight.nvim'
 end)
 
 require 'nvim-autopairs'.setup {}
