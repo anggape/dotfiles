@@ -1,5 +1,8 @@
 vim.o.completeopt = "menu,menuone,noselect"
+vim.o.mouse = "a"
+vim.o.relativenumber = true
 vim.cmd 'packadd packer.nvim'
+
 local packer = require 'packer'
 
 packer.startup(function (use)
