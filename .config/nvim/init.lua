@@ -1,3 +1,4 @@
+vim.o.completeopt = "menu,menuone,noselect"
 vim.cmd 'packadd packer.nvim'
 local packer = require 'packer'
 
