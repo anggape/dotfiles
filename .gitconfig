@@ -1,0 +1,8 @@
+[user]
+	email = anggape.dev@gmail.com
+	name = anggape
+	signingkey = anggape.dev@gmail.com
+[init]
+	defaultbranch = main
+[commit]
+	gpgsign = true
