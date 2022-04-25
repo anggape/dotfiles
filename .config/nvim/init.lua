@@ -21,6 +21,10 @@ packer.startup(function (use)
         'nvim-telescope/telescope.nvim',
 	requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use {
+        'romgrk/barbar.nvim',
+	requires = {'kyazdani42/nvim-web-devicons'}
+    }
 end)
 
 require 'nvim-autopairs'.setup {}
