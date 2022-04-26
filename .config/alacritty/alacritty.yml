@@ -2,6 +2,9 @@ window:
   padding:
     x: 10
     y: 10
+  dimensions:
+    columns: 60
+    lines: 15
 
 font:
   normal:
