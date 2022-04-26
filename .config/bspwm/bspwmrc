@@ -4,6 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 $HOME/.fehbg &
 $HOME/.config/polybar/launch.sh &
+[ ! -s ~/.config/mpd/pid ] && mpd &
 
 bspc monitor -d 1 2 3 4 5
 
