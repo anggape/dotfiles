@@ -8,7 +8,7 @@ $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d 1 2 3 4 5
 
-bspc config border_width 2
+bspc config border_width 4
 bspc config window_gap 15
 bspc config split_ratio .5
 bspc rule -a Alacritty state=floating
