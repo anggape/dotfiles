@@ -13,3 +13,4 @@ bspc config window_gap 10
 bspc config split_ratio .5
 bspc rule -a Alacritty state=floating
 bspc config focused_border_color '#70d38b'
+bspc rule -a Unity state=floating
