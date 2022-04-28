@@ -8,4 +8,11 @@ alias pacman='doas /sbin/pacman'
 autoload -U compinit
 compinit -i
 
+# case insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
