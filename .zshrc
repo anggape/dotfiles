@@ -7,3 +7,5 @@ alias pacman='doas /sbin/pacman'
 # autocomplete
 autoload -U compinit
 compinit -i
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
