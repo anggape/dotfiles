@@ -20,6 +20,10 @@ XF86AudioRaiseVolume:
 super + Return
 	alacritty
 
+# file manager
+super + e
+	nautilus
+
 # program launcher
 super + r
 	rofi -show drun
