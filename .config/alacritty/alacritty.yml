@@ -1,29 +1,29 @@
 window:
-  padding:
-    x: 10
-    y: 10
-  dimensions:
-    columns: 60
-    lines: 15
+    padding:
+        x: 10
+        y: 10
+    dimensions:
+        columns: 60
+        lines: 15
 
 font:
-  normal:
-    family: JetBrainsMono
-    style: Regular
-  bold:
-    family: JetBrainsMono
-    style: Bold
-  italic:
-    family: JetBrainsMono
-    style: Italic
-  bold_italic:
-    style: Bold Italic
+    normal:
+        family: JetBrainsMono
+        style: Regular
+    bold:
+        family: JetBrainsMono
+        style: Bold
+    italic:
+        family: JetBrainsMono
+        style: Italic
+    bold_italic:
+        style: Bold Italic
 
 cursor:
-  style:
-    blinking: On
+    style:
+        blinking: On
 
 colors:
-  primary:
-    background: '#0c0d14'
-    foreground: '#cbffd8'
+    primary:
+        background: '#0c0d14'
+        foreground: '#cbffd8'
