@@ -30,6 +30,7 @@ super + {_,shift + }b
 
 # hotkey daemon
 super + Escape
+	notify-send sxhkd 'hotkey reloaded'
 	pkill -USR1 -x sxhkd
 
 # quit/restart bspwm
