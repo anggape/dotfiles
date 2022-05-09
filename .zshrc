@@ -15,6 +15,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias ls='exa --icons --all --git'
+alias cd='z'
 alias df="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias poweroff='doas /sbin/poweroff'
 alias reboot='doas /sbin/reboot'
@@ -26,3 +27,5 @@ _dotnet_zsh_complete() {
     reply=( "${(ps:\n:)completions}" )
 }
 compctl -K _dotnet_zsh_complete dotnet
+
+eval "$(zoxide init zsh)"
