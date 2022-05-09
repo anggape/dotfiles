@@ -3,7 +3,6 @@ export ZSH=$HOME/.config/zsh/ohmyzsh
 ZSH_THEME="rounded"
 
 zstyle ':omz:update' mode disabled # disable automatic updates
-ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 ZSH_CUSTOM=$HOME/.config/zsh
 
