@@ -15,6 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='exa --icons --all --git'
 alias cd='z'
+alias cat='bat'
 alias df="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias poweroff='doas /sbin/poweroff'
 alias reboot='doas /sbin/reboot'
