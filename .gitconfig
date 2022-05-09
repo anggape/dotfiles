@@ -1,7 +1,7 @@
 [user]
 	email = anggape.dev@gmail.com
 	name = anggape
-	signingkey = anggape.dev@gmail.com
+	signingkey = F5E32DF816575480
 [init]
 	defaultbranch = main
 [commit]
