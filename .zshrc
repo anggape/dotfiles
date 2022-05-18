@@ -1,6 +1,6 @@
 export ZSH=$HOME/.config/zsh/ohmyzsh
 
-ZSH_THEME="rounded"
+ZSH_THEME="avit"
 
 zstyle ':omz:update' mode disabled # disable automatic updates
 COMPLETION_WAITING_DOTS="true"
