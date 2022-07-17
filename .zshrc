@@ -22,11 +22,26 @@ alias reboot='doas /sbin/reboot'
 alias pacman='doas /sbin/pacman'
 alias c='clear'
 
-# zsh parameter completion for the dotnet CLI
-_dotnet_zsh_complete() {
-    local completions=("$(dotnet complete "$words")")
-    reply=( "${(ps:\n:)completions}" )
-}
-compctl -K _dotnet_zsh_complete dotnet
+# # zsh parameter completion for the dotnet CLI
+# _dotnet_zsh_complete() {
+#     local completions=("$(dotnet complete "$words")")
+#     reply=( "${(ps:\n:)completions}" )
+# }
+# compctl -K _dotnet_zsh_complete dotnet
 
 eval "$(zoxide init zsh)"
+
+# bun completions
+[ -s "/home/ape/.bun/_bun" ] && source "/home/ape/.bun/_bun"
+
+# bun
+export BUN_INSTALL="/home/ape/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# history
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
