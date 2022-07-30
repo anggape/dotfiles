@@ -38,6 +38,8 @@ eval "$(zoxide init zsh)"
 export BUN_INSTALL="/home/ape/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export PATH="${HOME}/.bin/dotnet:${PATH}"
+
 # history
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
