@@ -1,0 +1,68 @@
+button2
+  sleep 0.3 && xte 'mouseclick 3'
+
+super + Escape
+  pkill -USR1 -x sxhkd
+
+super + b
+  firefox
+
+super + Return
+  wezterm
+
+super + r
+  rofi -show drun
+
+super + alt + q
+  bspc quit
+
+super + alt + r
+  bspc wm -r
+
+super + w
+  bspc node -c
+
+super + m
+  bspc desktop -l next
+
+super + g
+  bspc node -s biggest.window
+
+super + t
+  bspc node -t tiled
+
+super + s
+  bspc node -t floating
+
+super + f
+  bspc node -t fullscreen
+
+super + c
+  bspc node -f next.local.!hidden.window
+
+super + shift + c
+  bspc node -f prev.local.!hidden.window
+
+super + {1-5}
+  bspc desktop -f '^{1-5}'
+
+super + shift + {1-5}
+  bspc node -d '^{1-5}'
+
+super + {Left, Down, Up, Right}
+  bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+
+XF86MonBrightnessUp
+  xbacklight -inc 10 -steps 10
+
+XF86MonBrightnessDown
+  xbacklight -dec 10 -steps 10
+
+XF86AudioRaiseVolume
+  pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+  pactl set-sink-mute 0 toggle
