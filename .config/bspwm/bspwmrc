@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+xsetroot -cursor_name left_ptr
+
+pgrep --exact sxhkd >/dev/null || sxhkd     &
+pgrep --exact polybar >/dev/null || polybar &
+
+bspc monitor --reset-desktops 1 2 3 4 5
+bspc desktop --layout monocle
+
+bspc config border_width 5
+bspc config window_gap 10
+bspc config split_ratio 0.5
+
+source "${HOME}/.config/bspwm/colors"

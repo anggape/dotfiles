@@ -1,0 +1,75 @@
+super + Return
+  alacritty
+
+super + r
+  rofi -show drun
+
+super + b
+  firefox
+
+super + Escape
+  pkill -USR1 --exact sxhkd
+
+super + alt + q
+  bspc quit
+
+super + alt + r
+  bspc wm --restart
+
+super + w
+  bspc node --close
+
+super + m
+  bspc desktop --layout next
+
+super + g
+  bspc node --swap biggest.window
+
+super + t
+  bspc node --state tiled
+
+super + s
+  bspc node --state floating
+
+super + f
+  bspc node --state fullscreen
+
+super + {h,j,k,l}
+  bspc node --focus {west,south,north,east}
+
+super + shift + {h,j,k,l}
+  bspc node --swap {west,south,north,east}
+
+super + c
+  bspc node --focus next.local.!hidden.window
+
+super + shift + c
+  bspc node --focus prev.local.!hidden.window
+
+super + bracket{left,right}
+  bspc desktop --focus {prev,next}.local
+
+super + {1-5}
+  bspc desktop --focus '^{1-5}'
+
+super + shift + {1-5}
+  bspc node --to-desktop '^{1-5}'
+
+super + alt + h
+  bspc node --resize left   20 0; \
+  bspc node --resize right -20 0
+
+super + alt + l
+  bspc node --resize left  -20 0; \
+  bspc node --resize right  20 0
+
+super + alt + j
+  bspc node --resize top    0  20; \
+  bspc node --resize bottom 0 -20
+
+super + alt + k
+  bspc node --resize top    0 -20; \
+  bspc node --resize bottom 0  20
+
+super + {Left,Down,Up,Right}
+  bspc node --move {-20 0,0 20,0 -20,20 0}
