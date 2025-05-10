@@ -1,0 +1,3 @@
+source ~/.config/bspwm/colors
+bspc config focused_border_color '{{ colors.foreground }}'
+bspc config normal_border_color '{{ colors.background }}'
