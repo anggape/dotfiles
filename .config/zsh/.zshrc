@@ -20,9 +20,19 @@ zle -N down-line-or-beginning-search
 zstyle ':completion:*' menu         select              # display selection.
 zstyle ':completion:*' matcher-list m:{a-zA-Z}={A-Za-z} # case insensitive completion.
 
-bindkey '^[[Z' reverse-menu-complete         # shift + tab: select previous completion menu.
-bindkey '^[[A' up-line-or-beginning-search   # up arrow: search previous history.
-bindkey '^[[B' down-line-or-beginning-search # down arrow: search next history.
+bindkey -e                                      # use emacs mode.
+bindkey '^[[3~'   delete-char                   # delete           : delete backward.
+bindkey '^[^?'    backward-delete-word          # alt + backspace  : delete word backward.
+bindkey '^H'      backward-delete-word          # ctrl + backspace : delete word backward.
+bindkey '^[[3;3~' delete-word                   # alt + delete     : delete word forward.
+bindkey '^[[3;5~' delete-word                   # ctrl + delete    : delete word forward.
+bindkey '^[[1;5D' backward-word                 # ctrl + left      : jump word backward.
+bindkey '^[[1;3D' backward-word                 # alt + left       : jump word backward.
+bindkey '^[[1;5C' forward-word                  # ctrl + right     : jump word forward
+bindkey '^[[1;3C' forward-word                  # alt + right      : jump word forward
+bindkey '^[[Z'    reverse-menu-complete         # shift + tab      : select previous completion menu.
+bindkey '^[[A'    up-line-or-beginning-search   # up arrow         : search previous history.
+bindkey '^[[B'    down-line-or-beginning-search # down arrow       : search next history.
 
 alias ls="ls --human-readable --almost-all --no-group --color=always -l"
 alias c="clear"
