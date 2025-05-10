@@ -21,3 +21,10 @@ hide_when_typing = true
 [window]
 decorations     = "None"
 dynamic_padding = true
+
+[keyboard]
+bindings = [
+  { key = "Tab", mods = "Control",       chars = "\uE000" },
+  { key = "Tab", mods = "Control|Shift", chars = "\uE001" },
+  { key = "T",   mods = "Control|Shift", chars = "\uE002" },
+]
