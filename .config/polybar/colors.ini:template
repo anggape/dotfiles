@@ -1,0 +1,20 @@
+polybar-msg cmd restart
+[colors]
+background = {{ colors.background }}
+foreground = {{ colors.foreground }}
+color1     = {{ colors.indexed[0] }}
+color2     = {{ colors.indexed[1] }}
+color3     = {{ colors.indexed[2] }}
+color4     = {{ colors.indexed[3] }}
+color5     = {{ colors.indexed[4] }}
+color6     = {{ colors.indexed[5] }}
+color7     = {{ colors.indexed[6] }}
+color8     = {{ colors.indexed[7] }}
+color9     = {{ colors.indexed[8] }}
+color10    = {{ colors.indexed[9] }}
+color11    = {{ colors.indexed[10] }}
+color12    = {{ colors.indexed[11] }}
+color13    = {{ colors.indexed[12] }}
+color14    = {{ colors.indexed[13] }}
+color15    = {{ colors.indexed[14] }}
+color16    = {{ colors.indexed[15] }}

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+"${HOME}/.local/opt/update_colors.py"
+
 xsetroot -cursor_name left_ptr
 
 pgrep --exact sxhkd >/dev/null || sxhkd     &

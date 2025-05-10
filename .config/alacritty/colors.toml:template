@@ -1,0 +1,24 @@
+touch ~/.config/alacritty/alacritty.toml
+[colors.primary]
+background = '{{ colors.background }}'
+foreground = '{{ colors.foreground }}'
+
+[colors.normal]
+black   = '{{ colors.indexed[0] }}'
+red     = '{{ colors.indexed[1] }}'
+green   = '{{ colors.indexed[2] }}'
+yellow  = '{{ colors.indexed[3] }}'
+blue    = '{{ colors.indexed[4] }}'
+magenta = '{{ colors.indexed[5] }}'
+cyan    = '{{ colors.indexed[6] }}'
+white   = '{{ colors.indexed[7] }}'
+
+[colors.bright]
+black   = '{{ colors.indexed[8] }}'
+red     = '{{ colors.indexed[9] }}'
+green   = '{{ colors.indexed[10] }}'
+yellow  = '{{ colors.indexed[11] }}'
+blue    = '{{ colors.indexed[12] }}'
+magenta = '{{ colors.indexed[13] }}'
+cyan    = '{{ colors.indexed[14] }}'
+white   = '{{ colors.indexed[15] }}'
