@@ -6,6 +6,7 @@ xsetroot -cursor_name left_ptr
 
 pgrep --exact sxhkd >/dev/null || sxhkd     &
 pgrep --exact polybar >/dev/null || polybar &
+[ -f "${HOME}/.fehbg" ] && ${HOME}/.fehbg   &
 
 bspc monitor --reset-desktops 1 2 3 4 5
 bspc desktop --layout monocle
