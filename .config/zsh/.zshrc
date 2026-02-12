@@ -28,3 +28,6 @@ alias dot="git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME"
 
 alias c="clear"
 alias e="exit 0"
+
+export PROMPT=$'\n%B%# %F{3}%~%f\n> %b'
+export RPROMPT='%(?..%K{1} %? %k)'
