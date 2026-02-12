@@ -13,7 +13,7 @@ autoload -Uz                  \
   compinit                    \
   up-line-or-beginning-search \
   down-line-or-beginning-search
-compinit -d "$HOME/.cache/zsh_compdump"
+compinit -d "$XDG_CACHE_HOME/zsh_compdump"
 
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
@@ -39,7 +39,7 @@ bindkey "^[[A"    up-line-or-beginning-search
 bindkey "^[[B"    down-line-or-beginning-search
 
 alias ls="ls -l --almost-all --group-directories-first --human-readable --color=always --sort=version"
-alias dot="git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME"
+alias dot="git --git-dir=$XDG_DATA_HOME/dotfiles --work-tree=$HOME"
 
 alias c="clear"
 alias e="exit 0"
