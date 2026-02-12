@@ -23,8 +23,20 @@ zstyle ":completion:*" menu         list
 zstyle ":completion:*" matcher-list m:{a-zA-Z}={A-Za-z}
 
 bindkey -e
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
+bindkey "^A"      beginning-of-line
+bindkey "^E"      end-of-line
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;3C" forward-word
+bindkey "^[[3~"   delete-char
+bindkey "^[^?"    backward-delete-word
+bindkey "^H"      backward-delete-word
+bindkey "^[[3;3~" delete-word
+bindkey "^[[3;5~" delete-word
+bindkey "^[[Z"    reverse-menu-complete
+bindkey "^[[A"    up-line-or-beginning-search
+bindkey "^[[B"    down-line-or-beginning-search
 
 alias ls="ls -l --almost-all --group-directories-first --human-readable --color=always --sort=version"
 alias dot="git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME"
