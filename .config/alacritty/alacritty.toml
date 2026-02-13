@@ -14,6 +14,14 @@ italic      = { family = "JetBrainsMono Nerd Font", style = "Italic"           }
 bold        = { family = "JetBrainsMono Nerd Font", style = "ExtraBold"        }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "ExtraBold Italic" }
 
+[keyboard]
+bindings = [
+  { key = "T",   mods = "Control|Shift", chars = "\uE000" },
+  { key = "Tab", mods = "Control",       chars = "\uE001" },
+  { key = "Tab", mods = "Control|Shift", chars = "\uE002" },
+  { key = "W",   mods = "Control|Shift", chars = "\uE003" },
+]
+
 [colors.primary]
 background = "#000000"
 foreground = "#ffffff"
