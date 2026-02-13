@@ -1,5 +1,5 @@
 export WORDCHARS=""
-export HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state/zsh_history}"
+export HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh_history"
 export HISTSIZE="100000"
 export SAVEHIST="100000"
 export GPG_TTY="$(tty)"
