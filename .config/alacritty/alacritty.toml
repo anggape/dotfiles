@@ -1,0 +1,18 @@
+[window]
+dynamic_padding = true
+padding         = { x = 5, y = 5 }
+
+[font]
+normal      = { family = "JetBrainsMono Nerd Font", style = "Regular"          }
+italic      = { family = "JetBrainsMono Nerd Font", style = "Italic"           }
+bold        = { family = "JetBrainsMono Nerd Font", style = "ExtraBold"        }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "ExtraBold Italic" }
+
+[cursor]
+blink_interval = 500
+blink_timeout  = 0
+style          = { shape = "Block", blinking = "Always" }
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
