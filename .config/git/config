@@ -1,0 +1,16 @@
+[include]
+  path = config_user
+[commit]
+  gpgsign = true
+  verbose = true
+[init]
+  defaultBranch = main
+[status]
+  showUntrackedFiles = all
+[alias]
+  c  = commit
+  d  = diff
+  s  = status
+  l  = log --oneline
+  ps = push
+  pl = pull
