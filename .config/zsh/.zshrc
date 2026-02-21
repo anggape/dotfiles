@@ -1,4 +1,7 @@
 setopt                 \
+  glob_dots            \
+  auto_cd              \
+  auto_pushd           \
   extended_history     \
   share_history        \
   hist_ignore_dups     \
