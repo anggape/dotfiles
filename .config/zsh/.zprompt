@@ -1,2 +1,20 @@
-export PROMPT=$'\n%B%# %F{3}%~%f\n> %b'
+setopt promptsubst
+autoload -Uz vcs_info
+
+zstyle ":vcs_info:*"    enable  git
+zstyle ":vcs_info:git*" formats %b
+
+precmd() {
+  vcs_info
+  ___git_prompt=""
+  if [[ -n "${vcs_info_msg_0_}" ]]; then
+    if [[ -n "$(git status --porcelain=v1)" ]]; then
+      ___git_prompt=$'%F{1}\Uf14cc '$vcs_info_msg_0_' %f'
+    else
+      ___git_prompt=$'%F{4}\Uf062c '$vcs_info_msg_0_' %f'
+    fi
+  fi
+}
+
+export PROMPT=$'\n%B%# %F{3}%~%f ${___git_prompt}\n> %b'
 export RPROMPT='%(?..%K{1} %? %k)'
