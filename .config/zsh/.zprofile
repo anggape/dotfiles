@@ -1,6 +1,6 @@
 if [[ "$(tty)" == "/dev/tty1" ]]; then
-  echo "# TODO: start session"
-  setterm -cursor on
+  export UWSM_SILENT_START=2
+  exec uwsm start hyprland.desktop
 else
   setterm -cursor on
 fi
