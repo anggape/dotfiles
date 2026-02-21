@@ -1,0 +1,2 @@
+export PROMPT=$'\n%B%# %F{3}%~%f\n> %b'
+export RPROMPT='%(?..%K{1} %? %k)'
